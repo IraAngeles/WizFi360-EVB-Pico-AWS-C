@@ -1,27 +1,8 @@
 
-
-/*
-
- * Auto generated Run-Time-Environment Configuration File
-
- *      *** Do not modify ! ***
-
- *
-
- * Project: 'Blinky' 
-
- * Target:  'Simulation' 
-
- */
-
-
-
 #ifndef RTE_COMPONENTS_H
-
 #define RTE_COMPONENTS_H
 
-
-
+#include "hardware/regs/addressmap.h"
 
 
 /*
@@ -31,7 +12,7 @@
  */
 
 #define CMSIS_device_header "RP2040.h"//DEVICE_RP2040_FILE//"ARMCM0plus.h"//"RP2040.h"
-//#define CMSIS_device_header "pico/stdlib.h"
+
 
 
 /* ARM.FreeRTOS::RTOS:Config:CMSIS RTOS2:10.4.6 */
