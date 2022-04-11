@@ -19,3 +19,6 @@ url=https://github.com/Mbed-TLS/mbedtls.git
 [submodule "libraries/CMSIS-FreeRTOS"]
 	path = libraries/CMSIS-FreeRTOS
 	url = https://github.com/ARM-software/CMSIS-FreeRTOS.git
+[submodule "libraries/IoT_Socket"]
+	path = libraries/IoT_Socket
+	url = https://github.com/MDK-Packs/IoT_Socket.git
