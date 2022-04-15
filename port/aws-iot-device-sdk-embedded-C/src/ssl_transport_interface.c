@@ -74,7 +74,6 @@ int recv_timeout(void *ctx, unsigned char *buf, size_t len, uint32_t timeout)
     if (ret < 0)
         return (0);
 
-    //return 0;
     return ret;
 }
 /*Shell for mbedtls debug function.
