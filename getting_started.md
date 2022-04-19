@@ -139,7 +139,7 @@ Link
 [link-rp2040]: https://www.raspberrypi.org/products/rp2040/
 [link-wizfi360]: https://docs.wiznet.io/Product/Wi-Fi-Module/WizFi360/wizfi360
 [link-wizfi360-evb-pico]: https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico
-[link-wizfi360-evb-pico_main]: https://github.com/Wiznet/RP2040-HAT-AWS-C/blob/main/static/images/getting_started/w5100s-evb-pico_main.png
+[link-wizfi360-evb-pico_main]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/getting_started/wizfi360-evb-pico_main.png
 [link-connect_aws_iot_through_mqtt]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/tree/main/examples/AWS_MQTT_Demo
 [link-cmsis_5]: https://github.com/ARM-software/CMSIS_5
 [link-cmsis-driver]: https://github.com/ARM-software/CMSIS-Driver
