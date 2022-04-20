@@ -26,7 +26,7 @@
 #define MQTT_PUB_PERIOD (1000 * 10) // 10 seconds
 
 /* AWS IoT */
-#define MQTT_DOMAIN "a3uz5t2azg1xdz-ats.iot.us-west-2.amazonaws.com"
+#define MQTT_DOMAIN "account-specific-prefix-ats.iot.ap-northeast-2.amazonaws.com"
 #define MQTT_PUB_TOPIC "$aws/things/my_wizfi360_thing/shadow/update"
 #define MQTT_SUB_TOPIC "$aws/things/my_wizfi360_thing/shadow/update/accepted"
 #define MQTT_USERNAME NULL

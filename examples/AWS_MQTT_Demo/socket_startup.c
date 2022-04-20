@@ -22,9 +22,8 @@
 
 #include "Driver_WiFi.h"
 
-#define SSID            ""
-#define PASSWORD        ""
-
+#define SSID            "ssid"
+#define PASSWORD        "password"
 #define SECURITY_TYPE   ARM_WIFI_SECURITY_WPA2
 
 extern ARM_DRIVER_WIFI Driver_WiFi1;

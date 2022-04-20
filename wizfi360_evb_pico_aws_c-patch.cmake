@@ -130,26 +130,11 @@ endif()
 
 execute_process(COMMAND ${GIT_EXECUTABLE} -C ${PICO_SDK_SRC_DIR} submodule update --init)
 
-# coreHTTP patch
-message("submodules aws-iot-device-sdk-embedded-C coreHTTP initialised")
-
-file(GLOB AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCHES 
-	"${WIZFI360_EVB_PICO_AWS_C_PATCH_DIR}/01_aws_iot_device_sdk_embedded_c_corehttp_network_interface.patch"
-	)
-
-foreach(AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH IN LISTS AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCHES)
-	message("Running patch ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH}")
-	execute_process(
-		COMMAND ${GIT_EXECUTABLE} apply --ignore-whitespace ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH}
-		WORKING_DIRECTORY ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_SRC_DIR}
-	)
-endforeach()
-
 # CMSIS-FreeRTOS patch
 message("submodules CMSIS-FreeRTOS initialised")
  
 file(GLOB CMSIS_FREERTOS_PATCHES
-	"${WIZFI360_EVB_PICO_AWS_C_PATCH_DIR}/02_CMSIS-FreeRTOS_cmsis_os2.patch"
+	"${WIZFI360_EVB_PICO_AWS_C_PATCH_DIR}/01_cmsis_freertos_cmsis_os2.patch"
 	)
 
 foreach(CMSIS_FREERTOS_PATCHES IN LISTS CMSIS_FREERTOS_PATCHES)
@@ -157,5 +142,20 @@ foreach(CMSIS_FREERTOS_PATCHES IN LISTS CMSIS_FREERTOS_PATCHES)
 	execute_process(
 		COMMAND ${GIT_EXECUTABLE} apply ${CMSIS_FREERTOS_PATCHES}
 		WORKING_DIRECTORY ${CMSIS_FREERTOS_SRC_DIR}
+	)
+endforeach()
+
+# coreHTTP patch
+message("submodules aws-iot-device-sdk-embedded-C coreHTTP initialised")
+
+file(GLOB AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCHES 
+	"${WIZFI360_EVB_PICO_AWS_C_PATCH_DIR}/02_aws_iot_device_sdk_embedded_c_corehttp_network_interface.patch"
+	)
+
+foreach(AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH IN LISTS AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCHES)
+	message("Running patch ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH}")
+	execute_process(
+		COMMAND ${GIT_EXECUTABLE} apply --ignore-whitespace ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_PATCH}
+		WORKING_DIRECTORY ${AWS_IOT_DEVICE_SDK_EMBEDDED_C_COREHTTP_SRC_DIR}
 	)
 endforeach()

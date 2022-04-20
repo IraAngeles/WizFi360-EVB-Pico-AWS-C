@@ -108,7 +108,7 @@ cd [user path]/RP2040-HAT-C/libraries/CMSIS-FreeRTOS
 cd D:/RP2040/WizFi360-EVB-Pico-AWS-C/libraries/CMSIS-FreeRTOS/CMSIS/RTOS2/FreeRTOS/Source
 
 /* Patch */
-git apply ../../../../../../patches/02_CMSIS-FreeRTOS_cmsis_os2.patch.patch
+git apply ../../../../../../patches/01_cmsis_freertos_cmsis_os2.patch
 ```
 
 - aws-iot-device-sdk-embedded-C
@@ -122,7 +122,7 @@ cd [user path]/WizFi360-EVB-Pico-AWS-C/libraries/aws-iot-device-sdk-embedded-C/l
 cd D:/RP2040/WizFi360-EVB-Pico-AWS-C/libraries/aws-iot-device-sdk-embedded-C/libraries/standard/coreHTTP
 
 /* Patch */
-git apply --ignore-whitespace ../../../../../patches/01_aws_iot_device_sdk_embedded_c_corehttp_network_interface.patch
+git apply --ignore-whitespace ../../../../../patches/02_aws_iot_device_sdk_embedded_c_corehttp_network_interface.patch
 ```
 
 3. Test
@@ -140,7 +140,7 @@ Link
 [link-wizfi360]: https://docs.wiznet.io/Product/Wi-Fi-Module/WizFi360/wizfi360
 [link-wizfi360-evb-pico]: https://docs.wiznet.io/Product/Open-Source-Hardware/wizfi360-evb-pico
 [link-wizfi360-evb-pico_main]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/getting_started/wizfi360-evb-pico_main.png
-[link-connect_aws_iot_through_mqtt]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/tree/main/examples/AWS_MQTT_Demo
+[link-connect_aws_iot_through_mqtt]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/tree/main/examples/aws_mqtt_demo
 [link-cmsis_5]: https://github.com/ARM-software/CMSIS_5
 [link-cmsis-driver]: https://github.com/ARM-software/CMSIS-Driver
 [link-cmsis-freertos]: https://github.com/ARM-software/CMSIS-FreeRTOS
