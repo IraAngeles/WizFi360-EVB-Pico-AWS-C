@@ -35,6 +35,8 @@ static const osThreadAttr_t app_main_attr = {
 static void app_main (void *argument) {
   int32_t status;
 
+  printf("AWS IoT Demo\r\n");
+
   status = socket_startup();
   if (status == 0) {
     demo();
