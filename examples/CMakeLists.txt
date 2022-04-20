@@ -1,1 +1,1 @@
-add_subdirectory(aws_mqtt_Demo)
+add_subdirectory(aws_mqtt_demo)

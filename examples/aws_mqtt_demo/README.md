@@ -136,4 +136,4 @@ Link
 [link-see_wi-fi_connection_log_connecting_to_aws_iot_and_publishing_message]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/aws_mqtt_demo/see_wi-fi_connection_log_connecting_to_aws_iot_and_publishing_message.png
 [link-subscribe_to_publish_topic_and_receive_publish_message_through_test_function]: https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/aws_mqtt_demo/subscribe_to_publish_topic_and_receive_publish_message_through_test_function.png
 [link-publish_message_through_test_function]:https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/aws_mqtt_demo/publish_message_through_test_function.png
-[link-receive_message_about_subcribe_topic]:https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/aws_mqtt_demo/receive_message_about_subcribe_topic.png
+[link-receive_message_about_subcribe_topic]:https://github.com/Wiznet/WizFi360-EVB-Pico-AWS-C/blob/main/static/images/aws_mqtt_demo/receive_message_about_subscribe_topic.png
