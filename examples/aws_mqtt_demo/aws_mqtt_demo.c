@@ -46,8 +46,8 @@ extern int stdout_init (void);
 int main (void)
 {
   set_clock_khz();
-
   SystemCoreClockUpdate();
+
   stdio_init_all();
 
   osKernelInitialize();                         // Initialize CMSIS-RTOS

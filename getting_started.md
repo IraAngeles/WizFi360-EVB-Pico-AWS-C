@@ -46,6 +46,7 @@ Note that **CMSIS_5**, **CMSIS-Driver**, **CMSIS-FreeRTOS**, **mbedtls**, **aws-
 - **CMSIS_5** is a set of tools, APIs, frameworks, and work flows that help to simplify software re-use, reduce the learning curve for microcontroller developers, speed-up project build and debug, and thus reduce the time to market for new applications.
 - **CMSIS-Driver** contains MCU independent device driver implementations and template files.
 - **CMSIS-FreeRTOS** is a common API for embedded microcontroller real-time operating system FreeRTOS.
+- **IoT_Socket** contains the code of IoT Socket - a simple BSD like IP socket interface that implements the glue logic between IoT cloud connectors (IoT clients) and the underlying communication stack.
 - **mbedtls** library supports additional algorithms and support related to TLS and SSL connections.
 - **aws-iot-device-sdk-embedded-C** library is embedded C (C-SDK) is a collection of C source files that can be used in embedded applications to securely connect IoT devices to AWS IoT Core.
 - **pico-sdk** is made available by Pico to enable developers to build software applications for the Pico platform.
@@ -56,6 +57,7 @@ Libraries are located in the '**WizFi360-EVB-Pico-AWS-C/libraries/**' directory.
 - [**CMSIS_5**][link-cmsis_5]
 - [**CMSIS-Driver**][link-cmsis-driver]
 - [**CMSIS-FreeRTOS**][link-cmsis-freertos]
+- [**IoT_Socket**][link-iot_socket]
 - [**mbedtls**][link-mbedtls]
 - [**aws-iot-device-sdk-embedded-C**][link-aws-iot-device-sdk-embedded-c]
 - [**pico-sdk**][link-pico-sdk]
@@ -144,6 +146,7 @@ Link
 [link-cmsis_5]: https://github.com/ARM-software/CMSIS_5
 [link-cmsis-driver]: https://github.com/ARM-software/CMSIS-Driver
 [link-cmsis-freertos]: https://github.com/ARM-software/CMSIS-FreeRTOS
+[link-iot_socket]: https://github.com/MDK-Packs/IoT_Socket
 [link-mbedtls]: https://github.com/ARMmbed/mbedtls
 [link-aws-iot-device-sdk-embedded-c]: https://github.com/aws/aws-iot-device-sdk-embedded-C
 [link-pico-sdk]: https://github.com/raspberrypi/pico-sdk

@@ -32,13 +32,13 @@ int32_t socket_startup (void) {
   ARM_WIFI_CONFIG_t config;
   int32_t ret;
   
-  printf("Connecting to WiFi ...\r\n");
+  printf(" Connecting to WiFi ...\r\n");
 
-  ret = Driver_WiFi1.Initialize  (NULL);
-  printf("Driver_WiFix.Initialize  (NULL) = %d\r\n", ret);
+  ret = Driver_WiFi1.Initialize(NULL);
+  printf(" Driver_WiFix.Initialize(NULL) : %d\r\n", ret);
   
   ret = Driver_WiFi1.PowerControl(ARM_POWER_FULL);
-  printf("Driver_WiFix.PowerControl(ARM_POWER_FULL) = %d\r\n", ret);
+  printf(" Driver_WiFix.PowerControl(ARM_POWER_FULL) : %d\r\n", ret);
   
   memset((void *)&config, 0, sizeof(config));
 
@@ -48,16 +48,16 @@ int32_t socket_startup (void) {
   config.ch       = 0U;
 
   ret = Driver_WiFi1.Activate(0U, &config);
-  printf("Driver_WiFix.Activate(0U, &config) = %d\r\n", ret);
+  printf(" Driver_WiFix.Activate(0U, &config) : %d\r\n", ret);
 
   ret = Driver_WiFi1.IsConnected();  
-  printf("Driver_WiFix.IsConnected() = %d\r\n", ret);
+  printf(" Driver_WiFix.IsConnected() : %d\r\n", ret);
   
   if (ret == 0U) {
-    printf("WiFi network connection failed!\r\n");
+    printf(" Wi-Fi network connection failed!\r\n");
     return (-1);
   } else {
-    printf("WiFi network connection succeeded!\r\n");
+    printf(" Wi-Fi network connection succeeded!\r\n");
   }
   return 0;
 }

@@ -96,7 +96,8 @@ int demo( void )
             ;
     }
 
-    printf("AWS Connected\r\n");
+    printf(" AWS IoT connected\r\n");
+
     while (1)
     {
         retval = mqtt_transport_yield(MQTT_DEFAULT_YIELD_TIMEOUT);
