@@ -1,6 +1,6 @@
 # Getting Started with WizFi360 AWS IoT Examples
 
-These sections will guide you through a series of steps from configuring development environment to running WizFi360 AWS IoT examples using the **WIZnet's ethernet products**.
+These sections will guide you through a series of steps from configuring development environment to running WizFi360 AWS IoT examples using the **WIZnet's Wi-Fi products**.
 
 - [**Development environment configuration**](#development_environment_configuration)
 - [**Hardware requirements**](#hardware_requirements)
@@ -25,12 +25,11 @@ The WizFi360 AWS IoT examples were tested by configuring the development environ
 <a name="hardware_requirements"></a>
 ## Hardware requirements
 
-The WizFi360 AWS IoT examples use **W5500-EVB-Pico** - Wi-Fi I/O module built on [**RP2040**][link-rp2040] and WIZnet's [**WizFi360**][link-wizfi360] ethernet chip.
+The WizFi360 AWS IoT examples use **WizFi360-EVB-Pico** - Wi-Fi I/O module built on [**RP2040**][link-rp2040] and WIZnet's [**WizFi360**][link-wizfi360] Wi-Fi module.
 
 - [**WizFi360-EVB-Pico**][link-wizfi360-evb-pico]
 
 ![][link-wizfi360-evb-pico_main]
-
 
 
 
