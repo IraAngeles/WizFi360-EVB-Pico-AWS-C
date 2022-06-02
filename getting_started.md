@@ -103,7 +103,7 @@ With Visual Studio Code, each library set as a submodule is automatically patche
 ```cpp
 /* Change directory */
 // change to the 'CMSIS-FreeRTOS' library directory
-cd [user path]/RP2040-HAT-C/libraries/CMSIS-FreeRTOS
+cd [user path]/WizFi360-EVB-Pico-AWS-C/libraries/CMSIS-FreeRTOS
 
 // e.g.
 cd D:/RP2040/WizFi360-EVB-Pico-AWS-C/libraries/CMSIS-FreeRTOS/CMSIS/RTOS2/FreeRTOS/Source
