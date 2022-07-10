@@ -24,10 +24,13 @@ target_sources(WIZFI360_FILES PUBLIC
         )
 
 target_include_directories(WIZFI360_FILES PUBLIC
+        ${CMSIS_FREERTOS_DIR}/Include
         ${CMSIS_5_DIR}/CMSIS/Driver/Include
         ${PORT_DIR}/WizFi360/inc
         ${PORT_DIR}/RTE/inc
         )
+
+message(STATUS "BUILDIRA - c = ${CMSIS_FREERTOS_DIR}")
 
 target_link_libraries(WIZFI360_FILES PRIVATE
         pico_stdlib
@@ -50,6 +53,7 @@ target_sources(AWS_SDK_PORT_FILES PUBLIC
         )
 
 target_include_directories(AWS_SDK_PORT_FILES PUBLIC
+        ${CMSIS_FREERTOS_DIR}/Include
         ${PORT_DIR}/aws-iot-device-sdk-embedded-C/inc
         ${CMSIS_5_DIR}/CMSIS/Driver/Include
         ${MBEDTLS_DIR}/include

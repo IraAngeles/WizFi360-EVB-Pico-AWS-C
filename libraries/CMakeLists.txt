@@ -14,6 +14,7 @@ target_sources(FREERTOS_FILES PUBLIC
 )
 
 target_include_directories(FREERTOS_FILES PUBLIC
+        ${CMSIS_FREERTOS_DIR}/Include
         ${PORT_DIR}/FreeRTOS-Kernel/inc
         ${PORT_DIR}/RTE/inc
         ${FREERTOS_DIR}/include
@@ -32,14 +33,15 @@ target_link_libraries(FREERTOS_FILES PRIVATE
 add_library(CMSIS_FREERTOS_FILES STATIC)
 
 target_sources(CMSIS_FREERTOS_FILES PUBLIC
-        ${CMSIS_FREERTOS_DIR}/source/ARM/clib_arm.c        
-        ${CMSIS_FREERTOS_DIR}/source/cmsis_os2.c        
-        ${CMSIS_FREERTOS_DIR}/source/freertos_evr.c
-        ${CMSIS_FREERTOS_DIR}/source/os_systick.c
+        ${CMSIS_FREERTOS_DIR}/Source/ARM/clib_arm.c        
+        ${CMSIS_FREERTOS_DIR}/Source/cmsis_os2.c        
+        ${CMSIS_FREERTOS_DIR}/Source/freertos_evr.c
+        ${CMSIS_FREERTOS_DIR}/Source/os_systick.c
 )
 
 target_include_directories(CMSIS_FREERTOS_FILES PUBLIC
-        ${CMSIS_FREERTOS_DIR}/include
+        ${CMSIS_FREERTOS_DIR}/Include
+        ${CMSIS_FREERTOS_DIR}/Source/include        
         ${CMSIS_5_DIR}/CMSIS/RTOS2/Include
         ${CMSIS_5_DIR}/CMSIS/Core/Include
         ${PICO_SDK_PATH}/src/rp2_common/cmsis/stub/CMSIS/Device/RaspberryPi/RP2040/Include
@@ -67,6 +69,7 @@ target_sources(WIZFI360_DRIVER_FILES PUBLIC
 )
 
 target_include_directories(WIZFI360_DRIVER_FILES PUBLIC
+        ${CMSIS_FREERTOS_DIR}/CMSIS/RTOS2/FreeRTOS/Include
         ${WIZFI360_DRIVER_DIR}
         ${WIZFI360_DRIVER_DIR}/BufList
         ${CMSIS_5_DIR}/CMSIS/Driver/Include
